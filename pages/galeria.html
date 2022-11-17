@@ -13,6 +13,7 @@
   <link rel="shortcut icon" href="../img/logo1.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <title>GALERIA</title>
 </head>
@@ -65,7 +66,7 @@
   </header>
 
   <main class="container-fluid">
-    <h3 class="galeria">CONOZCA NUESTROS SERVICIOS</h3>
+    <h3 class="galeria wow animate__animated animate__backInLeft">CONOZCA NUESTROS SERVICIOS</h3>
     <ul class="lista__galeria">
       <li class="lista__manos"> MANOS Y PIES
         <ul>
@@ -166,17 +167,10 @@
       </button>
     </div>
 
-
-
-
-
-
-
-
     </div>
 
 
-    <h4 class="clientas">NUESTRAS CLIENTAS</h4>
+    <h4 class="clientas wow animate__animated animate__backInLeft">NUESTRAS CLIENTAS</h4>
 
     <div class="galeria__video">
       <video src="../video/clienta1.mp4" controls class="clientas__video"></video>
@@ -198,7 +192,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
 </body>
 
 </html>
