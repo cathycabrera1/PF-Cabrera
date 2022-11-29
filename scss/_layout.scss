@@ -1,0 +1,55 @@
+/* GRILLA CON GRID AREAS DEL INDEX*/
+#grilla__index {
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main testimonios"
+        "footer footer footer footer";
+    grid-template-columns: 2fr 4fr 5fr 1fr;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+}
+
+.testimonios {
+    grid-area: testimonios;
+    background-color: #5b2046;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* GRILLA PROMOCIONES */
+#grilla-promociones{
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+    grid-template-columns: 2fr 4fr 5fr 1fr;
+}
+
+/* GRILLA UBICACION */
+#grilla-ubicacion{
+    display: grid;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "main main main main"
+        "footer footer footer footer";
+    grid-template-columns: 2fr 4fr 5fr 1fr;
+}

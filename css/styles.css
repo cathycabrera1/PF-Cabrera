@@ -8,13 +8,6 @@ html {
   font-size: 62, 5%;
 }
 
-/* GRILLA CON GRID AREAS DEL INDEX*/
-#grilla__index {
-  display: grid;
-  grid-template-areas: "header header header header" "nav nav nav nav" "main main main testimonios" "footer footer footer footer";
-  grid-template-columns: 2fr 4fr 5fr 1fr;
-}
-
 /* MEDIA QUERIES INDEX*/
 @media screen and (max-width: 768px) {
   #grilla__index {
@@ -23,28 +16,6 @@ html {
     grid-template-columns: 6fr 6fr;
   }
 }
-header {
-  background-color: rgb(255, 255, 255);
-  grid-area: header;
-}
-
-nav {
-  grid-area: nav;
-}
-
-main {
-  grid-area: main;
-}
-
-.testimonios {
-  grid-area: testimonios;
-  background-color: #5b2046;
-}
-
-footer {
-  grid-area: footer;
-}
-
 /* HEADER */
 .imagen {
   display: flex;
@@ -486,13 +457,6 @@ footer {
 }
 
 /* PROMOCIONES*/
-/* GRILLA PROMOCIONES */
-#grilla-promociones {
-  display: grid;
-  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
-  grid-template-columns: 2fr 4fr 5fr 1fr;
-}
-
 /* MEDIA QUERIES PROMOCIONES*/
 @media screen and (max-width: 768px) {
   #grilla-promociones {
@@ -611,13 +575,6 @@ form {
 }
 
 /* UBICACION*/
-/* GRILLA PROMOCIONES */
-#grilla-ubicacion {
-  display: grid;
-  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
-  grid-template-columns: 2fr 4fr 5fr 1fr;
-}
-
 /* MEDIA QUERIES UBICACION*/
 @media screen and (max-width: 768px) {
   #grilla-ubicacion {
