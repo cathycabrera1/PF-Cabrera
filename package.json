@@ -1,0 +1,19 @@
+{
+  "name": "preentrega2-cabrera",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cathycabrera1/preentrega-2-C.Cabrera.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cathycabrera1/preentrega-2-C.Cabrera/issues"
+  },
+  "homepage": "https://github.com/cathycabrera1/preentrega-2-C.Cabrera#readme",
+  "description": ""
+}

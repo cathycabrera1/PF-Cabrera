@@ -157,18 +157,7 @@ footer {
 }
 
 .fondoindex {
-    background-image: url(../img/fondonuevo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-}
-
-/* MEDIA QUERY FONDOS */
-
-@media screen and (max-width: 908px) {
-    .fondoindex {
-        background-repeat: repeat;
-    }
+    background-color: aliceblue;
 }
 
 
@@ -184,15 +173,7 @@ footer {
 }
 
 .fondo__ubicacion {
-    background-image: url(../img/fondonuevo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
-}
-@media screen and (max-width: 908px) {
-    .fondo__ubicacion {
-        background-repeat: repeat;
-    }
+    background-color: aliceblue;
 }
 
 
