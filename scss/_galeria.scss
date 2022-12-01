@@ -1,0 +1,54 @@
+/* GALERIA*/
+#carouselExampleControls {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .galeria {
+    text-align: center;
+    font-size: 400%;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-decoration: underline;
+    color: rgb(253, 252, 253);
+  }
+
+  .lista__galeria {
+    font-size: 250%;
+    font-family: "Times New Roman", Times, serif;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(246, 247, 247);
+  }
+  lista__manos {
+    font-weight: 700;
+  }
+  
+  .lista__depilacion {
+    font-weight: 700;
+  }
+  
+  .galeria__video {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .clientas {
+    font-size: 300%;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    text-align: center;
+    color: aliceblue;
+  }
+
+  
+.clientas__video {
+    max-width: 100%;
+    width: 30rem;
+    height: 30rem;
+  }
+  

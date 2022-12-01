@@ -1,0 +1,35 @@
+/* UBICACION*/
+
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ubicacion__titulo {
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-size: 500%;
+  font-style: oblique;
+}
+.ubicacion__mapa {
+    max-width: 100%;
+  }
+  
+  .ubicacion__direccion {
+    text-align: center;
+    font-size: 250%;
+    font-style: oblique;
+  }
+  .ubicacion__pais {
+    text-align: center;
+    font-size: 250%;
+    font-style: oblique;
+  }
+  
+.ubicacion__telefono {
+    text-align: center;
+    font-size: 250%;
+    font-style: oblique;
+  }

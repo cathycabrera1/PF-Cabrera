@@ -1,0 +1,51 @@
+/* CONTACTO*/
+form {
+    border: 20rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 6rem;
+    border-width: 10rem;
+    border-color: blueviolet;
+    color: rgb(252, 237, 252);
+    font-family: "Courier New", Courier, monospace;
+    font-style: normal;
+    font-size: 100%;
+    font-weight: 600;
+  }
+  .formulario {
+    margin-top: 10rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(244, 243, 245);
+    font-size: 290%;
+  }
+  
+  .formulario__relleno {
+    margin-top: 5rem;
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    color: rgb(245, 244, 246);
+    font-size: 300%;
+    font-weight: 900;
+  }
+  
+  .promociones {
+    text-align: left;
+    text-decoration: underline;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: medium;
+  }
+  
+  .boton {
+    background-color: beige;
+    font-family: "Roboto", sans-serif;
+    font-size: larger;
+    padding: 1 rem 2rem;
+    text-align: center;
+    margin-left: 6rem;
+  }
+  

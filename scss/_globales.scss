@@ -1,0 +1,88 @@
+/* FONDOS */
+.fondo {
+    max-width: 100%;
+    margin-left: 5rem;
+    margin-right: 2rem;
+  }
+  
+  .fondoindex {
+    background-color: hwb(210 98% 1%);
+  }
+  
+  .fondo__galeria {
+    background: radial-gradient(circle, red, brown, rgb(85, 8, 38), rgb(232, 123, 179), blue);
+  }
+  
+  .fondo__contacto {
+    background: radial-gradient(circle, red, brown, rgb(85, 8, 38), rgb(232, 123, 179), blue);
+  }
+  
+  .fondo__ubicacion {
+    background-color: hwb(195 96% 2%);
+  }
+
+  /* HEADER */
+.imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+  }
+
+  .titulo {
+    font-family: "Roboto", sans-serif;
+    font-size: 798%;
+    font-weight: 805;
+    color: hwb(274 2% 72%);
+    text-decoration: underline;
+    background-color: white;
+  }
+
+  .subtitulo {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 400%;
+    font-weight: 400;
+    color: rgb(15, 14, 15);
+    text-align: end;
+  }
+  .logo {
+    max-width: 100%;
+    width: 15rem;
+    height: 15rem;
+  }
+  
+  /* FOOTER*/
+footer {
+    background: linear-gradient(hwb(180 97% 2%), hsl(316deg, 83%, 16%));
+    height: 7rem;
+  }
+  
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .redes__parrafo {
+    font-size: 150%;
+    font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+  }
+  
+  .icono {
+    max-width: 100%;
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .footer__parrafo {
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: rgb(247, 246, 248);
+    text-align: end;
+  }

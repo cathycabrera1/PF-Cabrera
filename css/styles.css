@@ -8,84 +8,47 @@ html {
   font-size: 62, 5%;
 }
 
-/* MEDIA QUERIES INDEX*/
-@media screen and (max-width: 768px) {
-  #grilla__index {
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "main main" "testimonios testimonios" "footer footer";
-    grid-template-columns: 6fr 6fr;
-  }
-}
-/* HEADER */
-.imagen {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  background-color: white;
+/* GRILLA CON GRID AREAS DEL INDEX*/
+#grilla__index {
+  display: grid;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main testimonios" "footer footer footer footer";
+  grid-template-columns: 2fr 4fr 5fr 1fr;
 }
 
-/* MEDIA QUERIES HEADER */
-@media screen and (max-width: 684px) {
-  .imagen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: white;
-  }
-}
-.titulo {
-  font-family: "Roboto", sans-serif;
-  font-size: 798%;
-  font-weight: 805;
-  color: hwb(274 2% 72%);
-  text-decoration: underline;
-  background-color: white;
+header {
+  background-color: rgb(255, 255, 255);
+  grid-area: header;
 }
 
-/* MEDIA QUERIES TITULO */
-@media screen and (max-width: 951px) {
-  .titulo {
-    font-size: 600%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .titulo {
-    font-size: 400%;
-  }
-}
-@media screen and (max-width: 369px) {
-  .titulo {
-    font-size: 200%;
-  }
-}
-.subtitulo {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 400%;
-  font-weight: 400;
-  color: rgb(15, 14, 15);
-  text-align: end;
+nav {
+  grid-area: nav;
 }
 
-/* MEDIA QUERIES SUBTITULO */
-@media screen and (max-width: 1200px) {
-  .subtitulo {
-    text-align: center;
-  }
+main {
+  grid-area: main;
 }
-@media screen and (max-width: 600px) {
-  .subtitulo {
-    text-align: center;
-    font-size: 100%;
-  }
+
+.testimonios {
+  grid-area: testimonios;
+  background-color: #5b2046;
 }
-.logo {
-  max-width: 100%;
-  width: 15rem;
-  height: 15rem;
+
+footer {
+  grid-area: footer;
+}
+
+/* GRILLA PROMOCIONES */
+#grilla-promociones {
+  display: grid;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
+  grid-template-columns: 2fr 4fr 5fr 1fr;
+}
+
+/* GRILLA UBICACION */
+#grilla-ubicacion {
+  display: grid;
+  grid-template-areas: "header header header header" "nav nav nav nav" "main main main main" "footer footer footer footer";
+  grid-template-columns: 2fr 4fr 5fr 1fr;
 }
 
 /* FONDOS */
@@ -96,7 +59,7 @@ html {
 }
 
 .fondoindex {
-  background-color: aliceblue;
+  background-color: hwb(210 98% 1%);
 }
 
 .fondo__galeria {
@@ -108,27 +71,76 @@ html {
 }
 
 .fondo__ubicacion {
-  background-color: aliceblue;
+  background-color: hwb(195 96% 2%);
 }
 
-/* INDEX */
-.titulo-index {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-size: 400%;
-  font-weight: 800;
-  text-align: center;
-  color: rgb(74, 15, 101);
-  margin-top: 5rem;
+/* HEADER */
+.imagen {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.titulo {
+  font-family: "Roboto", sans-serif;
+  font-size: 798%;
+  font-weight: 805;
+  color: hwb(274 2% 72%);
   text-decoration: underline;
+  background-color: white;
 }
 
-/* MEDIA QUERIES TITULO INDEX */
-@media screen and (max-width: 385px) {
-  .titulo-index {
-    font-size: 150%;
-  }
+.subtitulo {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 400%;
+  font-weight: 400;
+  color: rgb(15, 14, 15);
+  text-align: end;
 }
+
+.logo {
+  max-width: 100%;
+  width: 15rem;
+  height: 15rem;
+}
+
+/* FOOTER*/
+footer {
+  background: linear-gradient(hwb(180 97% 2%), hsl(316deg, 83%, 16%));
+  height: 7rem;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes__parrafo {
+  font-size: 150%;
+  font-style: normal;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+
+.icono {
+  max-width: 100%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer__parrafo {
+  font-size: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  color: rgb(247, 246, 248);
+  text-align: end;
+}
+
 /* STAFF */
 .staff {
   display: flex;
@@ -144,7 +156,6 @@ html {
   margin-top: 1rem;
   transition: all 2s;
 }
-
 .staff img:hover {
   width: 40rem;
   height: 28rem;
@@ -163,26 +174,18 @@ html {
   background-image: radial-gradient(farthest-corner at 40px 40px, rgb(241, 239, 240) 0%, rgb(194, 116, 165) 100%);
 }
 
-/* MEDIA QUERIES STAFF */
-@media screen and (max-width: 951px) {
-  .staff p {
-    text-align: center;
-    font-size: 150%;
-    font-weight: bolder;
-    margin: 0 auto;
-  }
+/* INDEX */
+.titulo-index {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 400%;
+  font-weight: 800;
+  text-align: center;
+  color: rgb(74, 15, 101);
+  margin-top: 5rem;
+  text-decoration: underline;
 }
-@media screen and (max-width: 366px) {
-  .staff img {
-    width: 15rem;
-    height: 8rem;
-  }
-  .staff p {
-    font-size: 100%;
-    font-weight: bolder;
-    margin: 0 auto;
-  }
-}
+
 /* EQUIPO */
 .nuestro-staff {
   font-family: "Roboto", sans-serif;
@@ -214,33 +217,16 @@ html {
   transition: all 3s;
 }
 
-.equipo__personal img:hover {
-  width: 12rem;
-  height: 16;
-}
-
 .equipo__personal img {
   max-width: 100%;
   width: 6rem;
   height: 8rem;
 }
+.equipo__personal img:hover {
+  width: 12rem;
+  height: 16;
+}
 
-/* MEDIA QUERIES  EQUIPO*/
-@media screen and (max-width: 951px) {
-  .equipo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-  }
-}
-@media screen and (max-width: 350px) {
-  .equipo__personal {
-    width: auto;
-    height: auto;
-  }
-}
 /* SIGNIFICADO DE LAS UÑAS*/
 .informacion {
   font-family: "Roboto", sans-serif;
@@ -264,24 +250,6 @@ html {
   background-image: radial-gradient(farthest-corner at 40px 40px, rgb(241, 239, 240) 0%, rgb(194, 116, 165) 100%);
 }
 
-/* MEDIA QUERIES SIGNIFICADO DE LAS UÑAS*/
-@media screen and (max-width: 998px) {
-  .informacion__descripcion {
-    font-size: 150%;
-    margin-left: 2rem;
-    margin-right: 2rem;
-  }
-  .informacion {
-    font-size: 250%;
-  }
-}
-@media screen and (max-width: 366px) {
-  .informacion__descripcion {
-    font-size: 150%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
 /* OPCIONES PARA UÑAS */
 .opciones {
   display: grid;
@@ -323,40 +291,6 @@ html {
   color: rgb(74, 15, 101);
 }
 
-/* MEDIA QUERIES OPCIONES*/
-@media screen and (max-width: 1200px) {
-  .opciones {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (max-width: 945px) {
-  .opciones {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-@media screen and (max-width: 450px) {
-  .posibilidades {
-    font-size: 150%;
-  }
-  .card__opcion {
-    width: 12rem;
-    border-width: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .card__parrafo {
-    font-size: 100%;
-  }
-  .card__img {
-    max-width: 100%;
-    height: 8rem;
-    width: 5rem;
-  }
-}
 /* TESTIMONIOS CLIENTAS*/
 .testimonios {
   display: flex;
@@ -400,11 +334,6 @@ html {
   color: rgb(253, 252, 253);
 }
 
-@media screen and (max-width: 675px) {
-  .galeria {
-    font-size: 200%;
-  }
-}
 .lista__galeria {
   font-size: 250%;
   font-family: "Times New Roman", Times, serif;
@@ -416,14 +345,7 @@ html {
   color: rgb(246, 247, 247);
 }
 
-@media screen and (max-width: 675px) {
-  .lista__galeria {
-    font-size: 150%;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.lista__manos {
+lista__manos {
   font-weight: 700;
 }
 
@@ -445,18 +367,270 @@ html {
   color: aliceblue;
 }
 
-@media screen and (max-width: 675px) {
-  .clientas {
-    font-size: 150%;
-  }
-}
 .clientas__video {
   max-width: 100%;
   width: 30rem;
   height: 30rem;
 }
 
-/* PROMOCIONES*/
+table {
+  border-color: black;
+  font-size: 200%;
+  font-weight: 300;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+/* CONTACTO*/
+form {
+  border: 20rem;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-bottom: 6rem;
+  border-width: 10rem;
+  border-color: blueviolet;
+  color: rgb(252, 237, 252);
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: 600;
+}
+
+.formulario {
+  margin-top: 10rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(244, 243, 245);
+  font-size: 290%;
+}
+
+.formulario__relleno {
+  margin-top: 5rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: rgb(245, 244, 246);
+  font-size: 300%;
+  font-weight: 900;
+}
+
+.promociones {
+  text-align: left;
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: medium;
+}
+
+.boton {
+  background-color: beige;
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+  padding: 1 rem 2rem;
+  text-align: center;
+  margin-left: 6rem;
+}
+
+/* UBICACION*/
+.ubicacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ubicacion__titulo {
+  text-decoration: underline;
+  font-family: "Roboto", sans-serif;
+  font-size: 500%;
+  font-style: oblique;
+}
+
+.ubicacion__mapa {
+  max-width: 100%;
+}
+
+.ubicacion__direccion {
+  text-align: center;
+  font-size: 250%;
+  font-style: oblique;
+}
+
+.ubicacion__pais {
+  text-align: center;
+  font-size: 250%;
+  font-style: oblique;
+}
+
+.ubicacion__telefono {
+  text-align: center;
+  font-size: 250%;
+  font-style: oblique;
+}
+
+/* MEDIA QUERIES INDEX*/
+@media screen and (max-width: 768px) {
+  #grilla__index {
+    display: grid;
+    grid-template-areas: "header header" "nav nav" "main main" "testimonios testimonios" "footer footer";
+    grid-template-columns: 6fr 6fr;
+  }
+}
+/* MEDIA QUERIES HEADER */
+@media screen and (max-width: 684px) {
+  .imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+  }
+}
+/* MEDIA QUERIES TITULO */
+@media screen and (max-width: 951px) {
+  .titulo {
+    font-size: 600%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .titulo {
+    font-size: 400%;
+  }
+}
+@media screen and (max-width: 369px) {
+  .titulo {
+    font-size: 200%;
+  }
+}
+/* MEDIA QUERIES SUBTITULO */
+@media screen and (max-width: 1200px) {
+  .subtitulo {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subtitulo {
+    text-align: center;
+    font-size: 100%;
+  }
+}
+/* MEDIA QUERIES TITULO INDEX */
+@media screen and (max-width: 385px) {
+  .titulo-index {
+    font-size: 150%;
+  }
+}
+/* MEDIA QUERIES STAFF */
+@media screen and (max-width: 951px) {
+  .staff p {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bolder;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 366px) {
+  .staff img {
+    width: 15rem;
+    height: 8rem;
+  }
+  .staff p {
+    font-size: 100%;
+    font-weight: bolder;
+    margin: 0 auto;
+  }
+}
+/* MEDIA QUERIES  EQUIPO*/
+@media screen and (max-width: 951px) {
+  .equipo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .equipo__personal {
+    width: auto;
+    height: auto;
+  }
+}
+/* MEDIA QUERIES SIGNIFICADO DE LAS UÑAS*/
+@media screen and (max-width: 998px) {
+  .informacion__descripcion {
+    font-size: 150%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .informacion {
+    font-size: 250%;
+  }
+}
+@media screen and (max-width: 366px) {
+  .informacion__descripcion {
+    font-size: 150%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+/* MEDIA QUERIES OPCIONES*/
+@media screen and (max-width: 1200px) {
+  .opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 945px) {
+  .opciones {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 450px) {
+  .posibilidades {
+    font-size: 150%;
+  }
+  .card__opcion {
+    width: 12rem;
+    border-width: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card__parrafo {
+    font-size: 100%;
+  }
+  .card__img {
+    max-width: 100%;
+    height: 8rem;
+    width: 5rem;
+  }
+}
+/*MEDIA QUERY GALERIA*/
+@media screen and (max-width: 675px) {
+  .galeria {
+    font-size: 200%;
+  }
+}
+@media screen and (max-width: 675px) {
+  .lista__galeria {
+    font-size: 150%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 675px) {
+  .clientas {
+    font-size: 150%;
+  }
+}
 /* MEDIA QUERIES PROMOCIONES*/
 @media screen and (max-width: 768px) {
   #grilla-promociones {
@@ -482,16 +656,6 @@ footer {
   grid-area: footer;
 }
 
-table {
-  border-color: black;
-  font-size: 200%;
-  font-weight: 300;
-  background-image: url(../img/fondo.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-}
-
 @media screen and (max-width: 1200px) {
   table {
     font-size: 150%;
@@ -507,46 +671,12 @@ table {
     font-size: 60%;
   }
 }
-/* CONTACTO*/
-form {
-  border: 20rem;
-  margin-top: 2rem;
-  margin-left: 5rem;
-  margin-right: 5rem;
-  margin-bottom: 6rem;
-  border-width: 10rem;
-  border-color: blueviolet;
-  color: rgb(252, 237, 252);
-  font-family: "Courier New", Courier, monospace;
-  font-style: normal;
-  font-size: 100%;
-  font-weight: 600;
-}
-
+/*MEDIA QUERY CONTACTO*/
 @media screen and (max-width: 1200px) {
   form {
     margin: 0 auto;
   }
 }
-.formulario {
-  margin-top: 10rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 800;
-  text-align: center;
-  text-decoration: underline;
-  color: rgb(244, 243, 245);
-  font-size: 290%;
-}
-
-.formulario__relleno {
-  margin-top: 5rem;
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  color: rgb(245, 244, 246);
-  font-size: 300%;
-  font-weight: 900;
-}
-
 @media screen and (max-width: 675px) {
   .formulario {
     font-size: 150%;
@@ -557,24 +687,6 @@ form {
     font-weight: 800;
   }
 }
-.promociones {
-  text-align: left;
-  text-decoration: underline;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: medium;
-}
-
-.boton {
-  background-color: beige;
-  font-family: "Roboto", sans-serif;
-  font-size: larger;
-  padding: 1 rem 2rem;
-  text-align: center;
-  margin-left: 6rem;
-}
-
-/* UBICACION*/
 /* MEDIA QUERIES UBICACION*/
 @media screen and (max-width: 768px) {
   #grilla-ubicacion {
@@ -600,6 +712,51 @@ footer {
   grid-area: footer;
 }
 
+/*MEDIA QUERY UBICACION*/
+@media screen and (max-width: 1100px) {
+  .ubicacion__titulo {
+    font-size: 250%;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ubicacion__direccion {
+    font-size: 130%;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ubicacion__pais {
+    font-size: 130%;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .ubicacion__telefono {
+    font-size: 130%;
+    font-weight: 700;
+  }
+}
+/*media query footer*/
+@media screen and (max-width: 450px) {
+  .footer {
+    height: 5rem;
+  }
+  .redes__parrafo {
+    font-size: 80%;
+  }
+  .footer__parrafo {
+    font-size: 60%;
+    text-align: center;
+  }
+  .icono {
+    max-width: 100%;
+    width: 1rem;
+    height: 1rem;
+  }
+}
+/* UBICACION*/
 .ubicacion {
   display: flex;
   flex-direction: column;
@@ -712,5 +869,6 @@ footer {
     height: 1rem;
   }
 }
+/*# sourceMappingURL=styles.css.map */
 
 /*# sourceMappingURL=styles.css.map */
