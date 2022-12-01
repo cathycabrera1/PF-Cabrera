@@ -6,19 +6,19 @@
   }
   
   .fondoindex {
-    background-color: hwb(210 98% 1%);
+    background-color: $bg-body;
   }
   
   .fondo__galeria {
-    background: radial-gradient(circle, red, brown, rgb(85, 8, 38), rgb(232, 123, 179), blue);
+    background: $bg-radial;
   }
   
   .fondo__contacto {
-    background: radial-gradient(circle, red, brown, rgb(85, 8, 38), rgb(232, 123, 179), blue);
+    background: $bg-radial;
   }
   
   .fondo__ubicacion {
-    background-color: hwb(195 96% 2%);
+    background-color: $bg-body
   }
 
   /* HEADER */

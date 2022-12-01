@@ -6,7 +6,7 @@
   
   .galeria {
     text-align: center;
-    font-size: 400%;
+    font-size: $fuente-grande;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     text-decoration: underline;
@@ -14,7 +14,7 @@
   }
 
   .lista__galeria {
-    font-size: 250%;
+    font-size: $fuente-chica;
     font-family: "Times New Roman", Times, serif;
     font-style: normal;
     display: flex;
@@ -38,7 +38,7 @@
   }
   
   .clientas {
-    font-size: 300%;
+    font-size: $fuente-grande;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
     text-align: center;

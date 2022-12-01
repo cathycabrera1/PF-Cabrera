@@ -1,0 +1,11 @@
+/*varibale para color de fondo y fuentes*/
+$bg-body: rgb(244, 244, 248); 
+$bg-radial: radial-gradient(circle, red, brown, rgb(85, 8, 38), rgb(232, 123, 179), blue);
+$fuente-grande: 400%;
+$fuente-chica: 200%;
+
+/*variable para media queries*/
+$pantalla-cel: 580px;
+$pantalla-mediana: 768px;
+$pantalla-grande: 992px;
+$pantalla-xg: 1200px;

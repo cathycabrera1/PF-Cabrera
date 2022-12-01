@@ -8,6 +8,8 @@ html {
   font-size: 62, 5%;
 }
 
+/*varibale para color de fondo y fuentes*/
+/*variable para media queries*/
 /* GRILLA CON GRID AREAS DEL INDEX*/
 #grilla__index {
   display: grid;
@@ -59,7 +61,7 @@ footer {
 }
 
 .fondoindex {
-  background-color: hwb(210 98% 1%);
+  background-color: rgb(244, 244, 248);
 }
 
 .fondo__galeria {
@@ -71,7 +73,7 @@ footer {
 }
 
 .fondo__ubicacion {
-  background-color: hwb(195 96% 2%);
+  background-color: rgb(244, 244, 248);
 }
 
 /* HEADER */
@@ -297,6 +299,17 @@ footer {
   flex-direction: column;
   justify-content: space-around;
 }
+.testimonios p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: rgb(253, 247, 252);
+  text-align: center;
+}
+.testimonios img {
+  max-width: 100%;
+  height: 5rem;
+  width: 4rem;
+}
 
 .contenedores-testimonios {
   display: flex;
@@ -304,19 +317,6 @@ footer {
   justify-content: center;
   align-content: center;
   align-items: center;
-}
-
-.testimonios img {
-  max-width: 100%;
-  height: 5rem;
-  width: 4rem;
-}
-
-.testimonios p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 700;
-  color: rgb(253, 247, 252);
-  text-align: center;
 }
 
 /* GALERIA*/
@@ -335,7 +335,7 @@ footer {
 }
 
 .lista__galeria {
-  font-size: 250%;
+  font-size: 200%;
   font-family: "Times New Roman", Times, serif;
   font-style: normal;
   display: flex;
@@ -360,7 +360,7 @@ lista__manos {
 }
 
 .clientas {
-  font-size: 300%;
+  font-size: 400%;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   text-align: center;
@@ -406,7 +406,7 @@ form {
   text-align: center;
   text-decoration: underline;
   color: rgb(244, 243, 245);
-  font-size: 290%;
+  font-size: 200%;
 }
 
 .formulario__relleno {
@@ -414,7 +414,7 @@ form {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
   color: rgb(245, 244, 246);
-  font-size: 300%;
+  font-size: 200%;
   font-weight: 900;
 }
 
@@ -423,7 +423,7 @@ form {
   text-decoration: underline;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  font-size: medium;
+  font-size: 200%;
 }
 
 .boton {
@@ -446,7 +446,7 @@ form {
 .ubicacion__titulo {
   text-decoration: underline;
   font-family: "Roboto", sans-serif;
-  font-size: 500%;
+  font-size: 400%;
   font-style: oblique;
 }
 
@@ -456,97 +456,66 @@ form {
 
 .ubicacion__direccion {
   text-align: center;
-  font-size: 250%;
+  font-size: 200%;
   font-style: oblique;
 }
 
 .ubicacion__pais {
   text-align: center;
-  font-size: 250%;
+  font-size: 200%;
   font-style: oblique;
 }
 
 .ubicacion__telefono {
   text-align: center;
-  font-size: 250%;
+  font-size: 200%;
   font-style: oblique;
 }
 
-/* MEDIA QUERIES INDEX*/
-@media screen and (max-width: 768px) {
-  #grilla__index {
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "main main" "testimonios testimonios" "footer footer";
-    grid-template-columns: 6fr 6fr;
-  }
-}
-/* MEDIA QUERIES HEADER */
-@media screen and (max-width: 684px) {
-  .imagen {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    background-color: white;
-  }
-}
-/* MEDIA QUERIES TITULO */
-@media screen and (max-width: 951px) {
-  .titulo {
-    font-size: 600%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .titulo {
-    font-size: 400%;
-  }
-}
-@media screen and (max-width: 369px) {
-  .titulo {
-    font-size: 200%;
-  }
-}
-/* MEDIA QUERIES SUBTITULO */
+/* MEDIA QUERIES PANTALLA EXTRA GRANDE */
 @media screen and (max-width: 1200px) {
   .subtitulo {
     text-align: center;
   }
-}
-@media screen and (max-width: 600px) {
-  .subtitulo {
-    text-align: center;
-    font-size: 100%;
+  .opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-}
-/* MEDIA QUERIES TITULO INDEX */
-@media screen and (max-width: 385px) {
-  .titulo-index {
+  table {
     font-size: 150%;
   }
+  .ubicacion__telefono {
+    font-size: 130%;
+    font-weight: 700;
+  }
+  .ubicacion__pais {
+    font-size: 130%;
+    font-weight: 700;
+  }
+  .ubicacion__direccion {
+    font-size: 130%;
+    font-weight: 700;
+  }
+  .ubicacion__titulo {
+    font-size: 250%;
+    font-weight: 700;
+    text-align: center;
+  }
+  form {
+    margin: 0 auto;
+  }
 }
-/* MEDIA QUERIES STAFF */
-@media screen and (max-width: 951px) {
+/* MEDIA QUERIES PANTALLA GRANDE */
+@media screen and (max-width: 992px) {
+  .titulo {
+    font-size: 600%;
+  }
   .staff p {
     text-align: center;
     font-size: 150%;
     font-weight: bolder;
     margin: 0 auto;
   }
-}
-@media screen and (max-width: 366px) {
-  .staff img {
-    width: 15rem;
-    height: 8rem;
-  }
-  .staff p {
-    font-size: 100%;
-    font-weight: bolder;
-    margin: 0 auto;
-  }
-}
-/* MEDIA QUERIES  EQUIPO*/
-@media screen and (max-width: 951px) {
   .equipo {
     display: flex;
     flex-direction: column;
@@ -554,15 +523,6 @@ form {
     justify-content: center;
     gap: 2rem;
   }
-}
-@media screen and (max-width: 350px) {
-  .equipo__personal {
-    width: auto;
-    height: auto;
-  }
-}
-/* MEDIA QUERIES SIGNIFICADO DE LAS UÑAS*/
-@media screen and (max-width: 998px) {
   .informacion__descripcion {
     font-size: 150%;
     margin-left: 2rem;
@@ -571,30 +531,127 @@ form {
   .informacion {
     font-size: 250%;
   }
-}
-@media screen and (max-width: 366px) {
-  .informacion__descripcion {
-    font-size: 150%;
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-}
-/* MEDIA QUERIES OPCIONES*/
-@media screen and (max-width: 1200px) {
-  .opciones {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (max-width: 945px) {
   .opciones {
     display: grid;
     grid-template-columns: 1fr;
   }
 }
-@media screen and (max-width: 450px) {
+/* MEDIA QUERIES PANTALLA MEDIANA*/
+@media screen and (max-width: 768px) {
+  #grilla__index {
+    display: grid;
+    grid-template-areas: "header header" "nav nav" "main main" "testimonios testimonios" "footer footer";
+    grid-template-columns: 6fr 6fr;
+  }
+  .titulo {
+    font-size: 400%;
+  }
+  .imagen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+  }
+  .subtitulo {
+    text-align: center;
+    font-size: 100%;
+  }
+}
+.galeria {
+  font-size: 200%;
+}
+
+.clientas {
+  font-size: 150%;
+}
+
+.lista__galeria {
+  font-size: 150%;
+  display: flex;
+  flex-direction: column;
+}
+
+#grilla-promociones {
+  display: grid;
+  grid-template-areas: "header header" "nav nav" "main main" "footer footer";
+  grid-template-columns: 6fr 6fr;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#grilla-ubicacion {
+  display: grid;
+  grid-template-areas: "header" "nav" "main" "footer";
+  grid-template-columns: 10fr;
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+footer .formulario {
+  font-size: 150%;
+}
+footer .formulario__relleno {
+  font-size: 140%;
+  text-decoration: underline;
+  font-weight: 800;
+}
+footer table {
+  font-size: 100%;
+}
+
+/*MEDIA QUERIES PANTALLA CEL*/
+@media screen and (max-width: 580px) {
+  .footer {
+    height: 5rem;
+  }
+  .redes__parrafo {
+    font-size: 80%;
+  }
+  .footer__parrafo {
+    font-size: 60%;
+    text-align: center;
+  }
+  .icono {
+    max-width: 100%;
+    width: 1rem;
+    height: 1rem;
+  }
+  table {
+    font-size: 60%;
+  }
   .posibilidades {
-    font-size: 150%;
+    font-size: 80%;
   }
   .card__opcion {
     width: 12rem;
@@ -605,268 +662,42 @@ form {
     align-items: center;
   }
   .card__parrafo {
-    font-size: 100%;
+    font-size: 80%;
   }
   .card__img {
     max-width: 100%;
     height: 8rem;
     width: 5rem;
   }
-}
-/*MEDIA QUERY GALERIA*/
-@media screen and (max-width: 675px) {
-  .galeria {
-    font-size: 200%;
+  .informacion__descripcion {
+    font-size: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
-}
-@media screen and (max-width: 675px) {
-  .lista__galeria {
-    font-size: 150%;
-    display: flex;
-    flex-direction: column;
-  }
-}
-@media screen and (max-width: 675px) {
-  .clientas {
-    font-size: 150%;
-  }
-}
-/* MEDIA QUERIES PROMOCIONES*/
-@media screen and (max-width: 768px) {
-  #grilla-promociones {
-    display: grid;
-    grid-template-areas: "header header" "nav nav" "main main" "footer footer";
-    grid-template-columns: 6fr 6fr;
-  }
-}
-header {
-  background-color: rgb(255, 255, 255);
-  grid-area: header;
-}
-
-nav {
-  grid-area: nav;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-}
-
-@media screen and (max-width: 1200px) {
-  table {
-    font-size: 150%;
-  }
-}
-@media screen and (max-width: 706px) {
-  table {
+  .informacion {
     font-size: 100%;
   }
-}
-@media screen and (max-width: 350px) {
-  table {
-    font-size: 60%;
+  .nuestro-staff {
+    font-size: 100%;
   }
-}
-/*MEDIA QUERY CONTACTO*/
-@media screen and (max-width: 1200px) {
-  form {
+  .equipo__personal {
+    width: auto;
+    height: auto;
+  }
+  .staff img {
+    width: 15rem;
+    height: 8rem;
+  }
+  .staff p {
+    font-size: 100%;
+    font-weight: bolder;
     margin: 0 auto;
   }
-}
-@media screen and (max-width: 675px) {
-  .formulario {
+  .titulo-index {
     font-size: 150%;
   }
-  .formulario__relleno {
-    font-size: 140%;
-    text-decoration: underline;
-    font-weight: 800;
-  }
-}
-/* MEDIA QUERIES UBICACION*/
-@media screen and (max-width: 768px) {
-  #grilla-ubicacion {
-    display: grid;
-    grid-template-areas: "header" "nav" "main" "footer";
-    grid-template-columns: 10fr;
-  }
-}
-header {
-  background-color: rgb(255, 255, 255);
-  grid-area: header;
-}
-
-nav {
-  grid-area: nav;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-}
-
-/*MEDIA QUERY UBICACION*/
-@media screen and (max-width: 1100px) {
-  .ubicacion__titulo {
-    font-size: 250%;
-    font-weight: 700;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .ubicacion__direccion {
-    font-size: 130%;
-    font-weight: 700;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .ubicacion__pais {
-    font-size: 130%;
-    font-weight: 700;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .ubicacion__telefono {
-    font-size: 130%;
-    font-weight: 700;
-  }
-}
-/*media query footer*/
-@media screen and (max-width: 450px) {
-  .footer {
-    height: 5rem;
-  }
-  .redes__parrafo {
-    font-size: 80%;
-  }
-  .footer__parrafo {
-    font-size: 60%;
-    text-align: center;
-  }
-  .icono {
-    max-width: 100%;
-    width: 1rem;
-    height: 1rem;
-  }
-}
-/* UBICACION*/
-.ubicacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.ubicacion__titulo {
-  text-decoration: underline;
-  font-family: "Roboto", sans-serif;
-  font-size: 500%;
-  font-style: oblique;
-}
-
-@media screen and (max-width: 1100px) {
-  .ubicacion__titulo {
-    font-size: 250%;
-    font-weight: 700;
-    text-align: center;
-  }
-}
-.ubicacion__mapa {
-  max-width: 100%;
-}
-
-.ubicacion__direccion {
-  text-align: center;
-  font-size: 250%;
-  font-style: oblique;
-}
-
-@media screen and (max-width: 1100px) {
-  .ubicacion__direccion {
-    font-size: 130%;
-    font-weight: 700;
-  }
-}
-.ubicacion__pais {
-  text-align: center;
-  font-size: 250%;
-  font-style: oblique;
-}
-
-@media screen and (max-width: 1100px) {
-  .ubicacion__pais {
-    font-size: 130%;
-    font-weight: 700;
-  }
-}
-.ubicacion__telefono {
-  text-align: center;
-  font-size: 250%;
-  font-style: oblique;
-}
-
-@media screen and (max-width: 1100px) {
-  .ubicacion__telefono {
-    font-size: 130%;
-    font-weight: 700;
-  }
-}
-/* FOOTER*/
-footer {
-  background: linear-gradient(hwb(180 97% 2%), hsl(316deg, 83%, 16%));
-  height: 7rem;
-}
-
-.redes {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.redes__parrafo {
-  font-size: 150%;
-  font-style: normal;
-  font-family: "Roboto", sans-serif;
-  font-weight: bolder;
-}
-
-.icono {
-  max-width: 100%;
-  width: 3rem;
-  height: 3rem;
-}
-
-.footer__parrafo {
-  font-size: 80%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: normal;
-  color: rgb(247, 246, 248);
-  text-align: end;
-}
-
-@media screen and (max-width: 450px) {
-  .footer {
-    height: 5rem;
-  }
-  .redes__parrafo {
-    font-size: 80%;
-  }
-  .footer__parrafo {
-    font-size: 60%;
-    text-align: center;
-  }
-  .icono {
-    max-width: 100%;
-    width: 1rem;
-    height: 1rem;
+  .titulo {
+    font-size: 200%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

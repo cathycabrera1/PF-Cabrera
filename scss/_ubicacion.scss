@@ -10,7 +10,7 @@
 .ubicacion__titulo {
   text-decoration: underline;
   font-family: "Roboto", sans-serif;
-  font-size: 500%;
+  font-size: $fuente-grande;
   font-style: oblique;
 }
 .ubicacion__mapa {
@@ -19,17 +19,17 @@
   
   .ubicacion__direccion {
     text-align: center;
-    font-size: 250%;
+    font-size: $fuente-chica;
     font-style: oblique;
   }
   .ubicacion__pais {
     text-align: center;
-    font-size: 250%;
+    font-size: $fuente-chica;
     font-style: oblique;
   }
   
 .ubicacion__telefono {
     text-align: center;
-    font-size: 250%;
+    font-size: $fuente-chica;
     font-style: oblique;
   }

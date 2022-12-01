@@ -20,7 +20,7 @@ form {
     text-align: center;
     text-decoration: underline;
     color: rgb(244, 243, 245);
-    font-size: 290%;
+    font-size: $fuente-chica;
   }
   
   .formulario__relleno {
@@ -28,7 +28,7 @@ form {
     font-family: "Courier New", Courier, monospace;
     text-align: center;
     color: rgb(245, 244, 246);
-    font-size: 300%;
+    font-size: $fuente-chica;
     font-weight: 900;
   }
   
@@ -37,7 +37,7 @@ form {
     text-decoration: underline;
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    font-size: medium;
+    font-size: $fuente-chica;
   }
   
   .boton {
