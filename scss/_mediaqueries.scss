@@ -2,7 +2,7 @@
   @media screen and (max-width: 1400px) {
   .opciones {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
    }
   @media screen and (max-width: $pantalla-xg) {
@@ -59,11 +59,17 @@
       .informacion {
         font-size: 250%;
       }
-      .opciones {
-        display: grid;
-        grid-template-columns: 1fr;
-      }
+      
+  .descuentos{
+  display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+      
     }
+     }
     
 
     /* MEDIA QUERIES PANTALLA MEDIANA*/

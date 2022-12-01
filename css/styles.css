@@ -390,8 +390,35 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
 
+.descuentos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.descuentos p {
+  color: rgb(3, 3, 3);
+  text-align: center;
+  font-size: 200%;
+  font-weight: 700;
+}
+
+.card-descuentos {
+  font-family: "Roboto", sans-serif;
+  border: solid 0.2rem rgb(209, 13, 89);
+  border-width: 1rem;
+  width: 25rem;
+  background-color: #eff3f7;
+  margin-bottom: 3rem;
+}
+
+/*EXTEND*/
 /* CONTACTO*/
 form {
   border: 20rem;
@@ -435,7 +462,7 @@ form {
   font-size: 200%;
 }
 
-.boton {
+.boton, .boton-descuento {
   background-color: beige;
   font-family: "Roboto", sans-serif;
   font-size: larger;
@@ -476,7 +503,7 @@ form {
 @media screen and (max-width: 1400px) {
   .opciones {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -533,9 +560,13 @@ form {
   .informacion {
     font-size: 250%;
   }
-  .opciones {
+  .descuentos {
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
   }
 }
 /* MEDIA QUERIES PANTALLA MEDIANA*/
