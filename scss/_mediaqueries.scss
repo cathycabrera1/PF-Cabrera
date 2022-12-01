@@ -69,6 +69,9 @@
     align-content: space-between;
       
     }
+    p{
+      font-size: 100%;
+    }
      }
     
 
@@ -160,6 +163,10 @@
       table {
         font-size: 100%;
       }
+
+      .descuentos p{
+        font-size: 100%;
+      }
     }
     
     
@@ -235,6 +242,23 @@
       }
       .titulo {
         font-size: 200%;
+      }
+
+      .descuentos {
+        font-size: 50%;
+        p {
+          font-size: 150%;
+        }
+      }
+
+      .card-descuentos{
+        height: 9rem;
+        width: 18rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        border-width: 1rem;
       }
     }
     

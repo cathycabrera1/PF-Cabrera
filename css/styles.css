@@ -414,7 +414,7 @@ table {
   border: solid 0.2rem rgb(209, 13, 89);
   border-width: 1rem;
   width: 25rem;
-  background-color: #eff3f7;
+  background-color: #e1ebb1;
   margin-bottom: 3rem;
 }
 
@@ -568,6 +568,9 @@ form {
     justify-content: space-between;
     align-content: space-between;
   }
+  p {
+    font-size: 100%;
+  }
 }
 /* MEDIA QUERIES PANTALLA MEDIANA*/
 @media screen and (max-width: 768px) {
@@ -662,6 +665,9 @@ footer .formulario__relleno {
 footer table {
   font-size: 100%;
 }
+footer .descuentos p {
+  font-size: 100%;
+}
 
 /*MEDIA QUERIES PANTALLA CEL*/
 @media screen and (max-width: 580px) {
@@ -731,6 +737,21 @@ footer table {
   }
   .titulo {
     font-size: 200%;
+  }
+  .descuentos {
+    font-size: 50%;
+  }
+  .descuentos p {
+    font-size: 150%;
+  }
+  .card-descuentos {
+    height: 9rem;
+    width: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border-width: 1rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */
