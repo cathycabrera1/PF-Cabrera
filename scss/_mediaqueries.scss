@@ -45,10 +45,7 @@
         margin: 0 auto;
       }
       .equipo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+       @include flex-colum-center;
         gap: 2rem;
       }
       .informacion__descripcion {
@@ -77,11 +74,8 @@
         font-size: 400%;
       }
       .imagen {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex-colum-center;
         align-content: center;
-        align-items: center;
         background-color: white;
       }
       .subtitulo {

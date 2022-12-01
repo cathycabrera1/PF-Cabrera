@@ -1,3 +1,22 @@
+/*MIXIN*/
+@mixin flex-colum-center {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+@mixin flex-column-spacearound {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  
+}
+
+/*EXTENDS*/
+
+
 /* FONDOS */
 .fondo {
     max-width: 100%;

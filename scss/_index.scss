@@ -1,10 +1,7 @@
 
 /* STAFF */
 .staff {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-colum-center;
   }
   
   .staff img {
@@ -156,9 +153,9 @@
 
   /* TESTIMONIOS CLIENTAS*/
 .testimonios {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  @include flex-column-spacearound;
+ 
+    
 
     p { 
     font-family: Arial, Helvetica, sans-serif;
@@ -182,5 +179,4 @@
     align-content: center;
     align-items: center;
   }
-  
- 
+

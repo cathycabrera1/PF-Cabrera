@@ -1,9 +1,7 @@
 /* UBICACION*/
 
 .ubicacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  @include flex-column-spacearound;
   align-items: center;
 }
 
@@ -17,19 +15,18 @@
     max-width: 100%;
   }
   
+  /*EXTEND*/
   .ubicacion__direccion {
     text-align: center;
     font-size: $fuente-chica;
     font-style: oblique;
   }
+
+
   .ubicacion__pais {
-    text-align: center;
-    font-size: $fuente-chica;
-    font-style: oblique;
+    @extend .ubicacion__direccion;
   }
   
 .ubicacion__telefono {
-    text-align: center;
-    font-size: $fuente-chica;
-    font-style: oblique;
+  @extend .ubicacion__direccion;
   }

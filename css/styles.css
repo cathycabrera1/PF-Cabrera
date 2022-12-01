@@ -53,6 +53,8 @@ footer {
   grid-template-columns: 2fr 4fr 5fr 1fr;
 }
 
+/*MIXIN*/
+/*EXTENDS*/
 /* FONDOS */
 .fondo {
   max-width: 100%;
@@ -433,6 +435,8 @@ form {
   padding: 1 rem 2rem;
   text-align: center;
   margin-left: 6rem;
+  width: 9rem;
+  border-radius: 8px;
 }
 
 /* UBICACION*/
@@ -454,19 +458,8 @@ form {
   max-width: 100%;
 }
 
-.ubicacion__direccion {
-  text-align: center;
-  font-size: 200%;
-  font-style: oblique;
-}
-
-.ubicacion__pais {
-  text-align: center;
-  font-size: 200%;
-  font-style: oblique;
-}
-
-.ubicacion__telefono {
+/*EXTEND*/
+.ubicacion__direccion, .ubicacion__telefono, .ubicacion__pais {
   text-align: center;
   font-size: 200%;
   font-style: oblique;
@@ -492,7 +485,7 @@ form {
     font-size: 130%;
     font-weight: 700;
   }
-  .ubicacion__direccion {
+  .ubicacion__direccion, .ubicacion__pais, .ubicacion__telefono {
     font-size: 130%;
     font-weight: 700;
   }
@@ -519,8 +512,8 @@ form {
   .equipo {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 2rem;
   }
   .informacion__descripcion {
@@ -550,8 +543,8 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
     align-items: center;
+    align-content: center;
     background-color: white;
   }
   .subtitulo {
