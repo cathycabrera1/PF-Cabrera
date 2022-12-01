@@ -1,12 +1,15 @@
   /* MEDIA QUERIES PANTALLA EXTRA GRANDE */
+  @media screen and (max-width: 1400px) {
+  .opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+   }
   @media screen and (max-width: $pantalla-xg) {
     .subtitulo {
       text-align: center;
     }
-    .opciones {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
+    
       table {
         font-size: 150%;
       }

@@ -54,7 +54,14 @@ footer {
 }
 
 /*MIXIN*/
-/*EXTENDS*/
+/* LISTA DE NAVEGACION */
+#navbarSupportedContent ul {
+  list-style-type: none;
+}
+#navbarSupportedContent ul a {
+  font-weight: 800;
+}
+
 /* FONDOS */
 .fondo {
   max-width: 100%;
@@ -67,11 +74,11 @@ footer {
 }
 
 .fondo__galeria {
-  background: radial-gradient(circle, red, brown, rgb(85, 8, 38), rgb(232, 123, 179), blue);
+  background: radial-gradient(circle, rgb(242, 240, 240), rgb(248, 225, 244), rgb(242, 171, 198), rgb(232, 123, 179), blue);
 }
 
 .fondo__contacto {
-  background: radial-gradient(circle, red, brown, rgb(85, 8, 38), rgb(232, 123, 179), blue);
+  background: radial-gradient(circle, rgb(242, 240, 240), rgb(248, 225, 244), rgb(242, 171, 198), rgb(232, 123, 179), blue);
 }
 
 .fondo__ubicacion {
@@ -333,7 +340,7 @@ footer {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   text-decoration: underline;
-  color: rgb(253, 252, 253);
+  color: rgb(6, 1, 6);
 }
 
 .lista__galeria {
@@ -344,10 +351,10 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  color: rgb(246, 247, 247);
+  color: rgb(6, 7, 7);
 }
 
-lista__manos {
+.lista__manos {
   font-weight: 700;
 }
 
@@ -366,7 +373,7 @@ lista__manos {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   text-align: center;
-  color: aliceblue;
+  color: rgb(5, 16, 25);
 }
 
 .clientas__video {
@@ -394,7 +401,7 @@ form {
   margin-bottom: 6rem;
   border-width: 10rem;
   border-color: blueviolet;
-  color: rgb(252, 237, 252);
+  color: rgb(18, 1, 18);
   font-family: "Courier New", Courier, monospace;
   font-style: normal;
   font-size: 100%;
@@ -407,7 +414,7 @@ form {
   font-weight: 800;
   text-align: center;
   text-decoration: underline;
-  color: rgb(244, 243, 245);
+  color: rgb(5, 0, 9);
   font-size: 200%;
 }
 
@@ -415,7 +422,7 @@ form {
   margin-top: 5rem;
   font-family: "Courier New", Courier, monospace;
   text-align: center;
-  color: rgb(245, 244, 246);
+  color: rgb(12, 12, 13);
   font-size: 200%;
   font-weight: 900;
 }
@@ -466,13 +473,15 @@ form {
 }
 
 /* MEDIA QUERIES PANTALLA EXTRA GRANDE */
-@media screen and (max-width: 1200px) {
-  .subtitulo {
-    text-align: center;
-  }
+@media screen and (max-width: 1400px) {
   .opciones {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .subtitulo {
+    text-align: center;
   }
   table {
     font-size: 150%;

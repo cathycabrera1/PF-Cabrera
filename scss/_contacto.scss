@@ -7,7 +7,7 @@ form {
     margin-bottom: 6rem;
     border-width: 10rem;
     border-color: blueviolet;
-    color: rgb(252, 237, 252);
+    color: rgb(18, 1, 18);
     font-family: "Courier New", Courier, monospace;
     font-style: normal;
     font-size: 100%;
@@ -19,7 +19,7 @@ form {
     font-weight: 800;
     text-align: center;
     text-decoration: underline;
-    color: rgb(244, 243, 245);
+    color: rgb(5, 0, 9);
     font-size: $fuente-chica;
   }
   
@@ -27,10 +27,12 @@ form {
     margin-top: 5rem;
     font-family: "Courier New", Courier, monospace;
     text-align: center;
-    color: rgb(245, 244, 246);
+    color: rgb(12, 12, 13);
     font-size: $fuente-chica;
     font-weight: 900;
   }
+
+  
   
   .promociones {
     text-align: left;
